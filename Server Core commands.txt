@@ -1,0 +1,22 @@
+// Windows server 2019 Core common commands
+
+sconfig 
+Server configuration screen: 
+   -- Shows menu to interact with server, network settings, domain settings, and many other things
+
+hostname
+Shows name of computer (also works in powershell) 
+
+powershell 
+Enters powershell prompt
+
+powershell cmds: 
+
+Get-DnsClientServerAddress
+   -- Shows current dns info
+
+Set-DnsClientServerAddress
+   -- Sets dns ip, you can set both primary and secondary
+   -- Ex: set-DnsClientServerAddress -InterfaceIndex 9 -ServerAddresses ("8.8.8.8","1.1.1.1")
+   -- Interface index comes from Get-NetAdapter
+

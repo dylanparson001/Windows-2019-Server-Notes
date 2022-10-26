@@ -1,0 +1,37 @@
+// Windows Server 2019 AD environemnt Documentation
+// Virtual Machines configured through Hyper-V 
+
+Domain: parsonnetwork.com 
+
+
+PARS-DC01 
+    - Windows Server 2019 Desktop Environment
+    - 2GB RAM
+    - 1 Processor
+    - 80GB Storage 
+    - Domain Controller
+    - DNS Server
+    - IP Address: 192.168.1.207
+    - Subnet mask: 255.255.255.0
+PARS-SVR01
+    - Windows Server 2019 DE
+    - 2GB RAM
+    - 1 Processor
+    - 80GB storage
+    - IP Address: 192.168.1.208
+    - Subnet: 255.255.255.0
+    - DNS: 192.168.1.207
+
+// Disabled
+PARS-Core 
+    - Windows Server 2019 Core 
+    - IP Address: 192.168.1.208
+    - 1GB RAM
+    - 1 Processor
+    - 50GB storage 
+    - Domain Controller 
+
+Verify DNS Records:
+   - Server manager
+     - Tools
+       - DNS

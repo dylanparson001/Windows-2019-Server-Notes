@@ -1,0 +1,5 @@
+// General notes for lab parsonnetwork.com 
+
+-- You can add services and roles to another server from domain controller. 
+
+-- This is done by the server manager, add server to server list. This is helpful especially for core servers instead of using powershell for everything
